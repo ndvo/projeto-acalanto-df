@@ -48,15 +48,12 @@ module.exports = function (eleventyConfig) {
 	// This allows Eleventy to watch for file changes during local development.
 	eleventyConfig.setUseGitIgnore(false);
 
-	// Add a "products" collection
-	eleventyConfig.addCollection("products", (collection) => {
-		return collection.getFilteredByGlob("products/**/*.md");
-		// return collection
-		// 	.getFilteredByGlob("_products/**/*.md")
-		// 	.sort(function (a, b) {
-		// 		return b.price - a.price;
-		// 	});
-	});
+	function sortByPriceHighToLow(values) {
+		let vals = [...values]; // this *seems* to prevent collection mutation...
+		return vals.sort((b, a) => Math.sign(a.data.price - b.data.price));
+	}
+
+	eleventyConfig.addFilter("sortByPriceHighToLow", sortByPriceHighToLow);
 
 	return {
 		dir: {
