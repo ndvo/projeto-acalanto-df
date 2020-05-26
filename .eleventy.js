@@ -14,7 +14,7 @@ module.exports = function (eleventyConfig) {
 	});
 
 	// Folders to copy to build dir (See. 1.1)
-	// eleventyConfig.addPassthroughCopy("src/static");
+	eleventyConfig.addPassthroughCopy("src/static");
 
 	if (process.env.ELEVENTY_ENV === "production") {
 		// Minify HTML (including inlined CSS and JS)
@@ -62,7 +62,7 @@ module.exports = function (eleventyConfig) {
 		dir: {
 			input: "src/",
 			output: "dist",
-			// includes: "_includes",
+			includes: "_includes",
 			layouts: "_layouts",
 		},
 		templateFormats: ["html", "md", "njk"],
