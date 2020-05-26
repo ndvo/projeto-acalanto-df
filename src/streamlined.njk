@@ -1,0 +1,49 @@
+---
+layout: streamlined.njk
+title: Streamlined Order & Auto-Ship Modification Form
+---
+
+<h2 class="text-4xl text-blue-500 mb-4 font-bold">Quick Order</h2>
+
+<form action="{{ site.foxy_cart_url }}">
+
+  <div class="border-t-8 border-b-8 mb-4">
+    {%- for product in collections.sdf -%}
+      {% include "product-streamlined.njk" %}
+    {%- endfor -%}
+  </div>
+
+  <div class="flex my-1">
+    <label class="w-1/2 text-right p-2 my-auto text-lg text-gray-600 font-bold" for="sub_frequency">
+      Deliver every…
+    </label>
+    <div class="w-1/2 text-left p-2">
+      <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 font-bold py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="sub_frequency" name="sub_frequency">
+        <option value="2m">2 weeks</option>
+        <option value="3m">3 weeks</option>
+        <option value="4m">4 weeks</option>
+      </select>
+      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex my-1">
+    <label class="w-1/2 text-right p-2 my-auto text-lg text-gray-600 font-bold" for="sub_next">
+      Next billing date…
+    </label>
+    <div class="w-1/2 text-left p-2 pl-6">
+      <p class="text-lg text-gray-700 font-bold">June 30, 2020</p>
+    </div>
+  </div>
+
+  <div class="flex my-1">
+    <div class="w-1/2"></div>
+    <div class="w-1/2 p-2">
+      <button class="border-blue-500 p-4 text-lg font-bold rounded-md bg-blue-200 hover:bg-blue-400 hover:text-white">
+        &rarr; Continue
+      </button>
+    </div>
+  </div>
+</form>

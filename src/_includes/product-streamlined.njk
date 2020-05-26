@@ -1,0 +1,40 @@
+<div class="flex {% if not loop.last %}border-b{% endif %} p-2">
+  <input type="hidden" name="name" value="{{ loop.index }}:{{ product.data.name }}">
+  <input type="hidden" name="price" value="{{ loop.index }}:{{ product.data.price }}">
+
+  <div class="w-3/5 flex">
+    {# Image #}
+    <div class="w-1/4">
+      <img class="h-24 object-cover object-top w-full" src="{{ product.data.image }}" alt="{{ product.data.image_alt_text if product.data.image_alt_text else product.data.name }}">
+    </div>
+
+    <div class="w-3/4 px-4 py-2 flex">
+      <div class="inline-block mb-auto mt-auto">
+        <p class="text-black text-xl font-bold">{{ product.data.name }}</p>
+        <p class="text-gray-600 text-sm">{{ product.data.summary }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-2/5 flex">
+    <div class="w-2/3 mb-auto mt-auto">
+      <p class="text-l text-gray-700">
+      	{{ site.currency_symbol }}{{ product.data.price }}
+      </p>
+    </div>
+
+    <div class="w-1/3 mb-auto mt-auto ">
+      <div class="custom-number-input mt-auto mb-auto">
+        <div class="flex flex-row w-full rounded-lg relative bg-transparent">
+          <button data-action="decrement" class=" bg-gray-300 text-gray-500 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer outline-none">
+            <span class="m-auto text-4xl leading-8 font-thin">−</span>
+          </button>
+          <input type="number" class="outline-none focus:outline-none text-center w-full bg-gray-300 font-semibold text-xl hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700 outline-none leading-8" name="quantity" value="0"></input>
+          <button data-action="increment" class="bg-gray-300 text-gray-500 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer">
+            <span class="m-auto text-4xl leading-8 font-thin">+</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

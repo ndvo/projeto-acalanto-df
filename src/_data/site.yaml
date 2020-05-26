@@ -1,15 +1,17 @@
-#   Your global data folder is controlled by the dir.data configuration option. 
-#  All *.json and module.exports values from *.js files in this directory will 
+#  Your global data folder is controlled by the dir.data configuration option.
+#  All *.json and module.exports values from *.js files in this directory will
 #  be added into a global data object available to all templates.
 
 #  This file can be accessed using: {{ site.title }}
 
-title: "Web Starter" # Appears after the title Page eg. Title - Web Starter
-description: "Minimal boilerplate for new projects built with Eleventy, Tailwind, PurgeCSS and PostCSS" 
-url: "https://webstarter.chriscollins.me"
+title: "GIOF — Genisis International Orphanage Foundation" # Appears after the title Page eg. Title - Web Starter
+description: "Join Genesis Diez on a mission trip, be part of our summer camp staff, or become a full time missionary."
+url: "https://giof.org/"
 
-author: "Chris Collins"
-meta_data: 
- twitter: "@scottishstoater"
+author: "BKF"
+meta_data:
+ twitter: "@"
  default_social_image: "/static/default_social_image.jpg"
 
+foxy_cart_url: https://giof.foxycart.com/cart
+currency_symbol: $

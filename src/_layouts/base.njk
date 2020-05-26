@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     {% include "head.njk" %}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     {% if env == 'production' %}
       <!-- capture the CSS content as a Liquid variable -->
       {% set css %}{% include "app.compiled.css" %}{% endset %}
-      <style> 
+      <style>
         {{ css | safe }}
       </style>
     {% else %}
@@ -13,7 +14,10 @@
     {% endif %}
   </head>
   <body>
+    {# {% include "nav.njk" %} #}
     {{ content | safe }}
+    {# {% include "footer_bottom.njk" %} #}
+    <script src="/static/app.bundled.js"></script>
+    <script src="https://cdn.foxycart.com/giof/loader.js"></script>
   </body>
-  <script src="/static/app.bundled.js"></script>
 </html>
