@@ -10,14 +10,19 @@ title: One-page complete e-commerce or live-event site.
     fixed md:relative
     bg-cover
     z-20
-    " style="background: url(/static/img/field.jpg)">
+    shadow-xl md:shadow-none
+    border-b-2 border-blue-700
+    "
+    style="background: url(/static/img/field.jpg)"
+  >
     {# <div class="relative w-full h-64 p-4" style=""> #}
-    <div class="">
-      <iframe class="absolute w-full h-full" style="" src="https://www.youtube.com/embed/caBJI3o-IoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="text-center align-middle">
+      <p>Video goes here :)</p>
+      {# <iframe class="absolute w-full h-full" style="" src="https://www.youtube.com/embed/caBJI3o-IoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> #}
     </div>
     {# </div> #}
   </div>
-  <div class="w-full md:w-1/2 h-full overflow-y-scroll pt-64 md:pt-0 z-10">
+  <div class="w-full md:w-1/2 h-full md:overflow-y-scroll mt-64 md:mt-0 z-10">
     {% include "nav.njk" %}
     {{ content | safe }}
     {% include "footer_bottom.njk" %}
