@@ -1,91 +1,54 @@
 ---
 layout: onepage.njk
-title: GIOF's annual gala, but online this year!
+title: JAMStack e-commerce with Foxy.io
 ---
 
 <section class="pt-12 p-8 md:p-12 text-left">
   <h3 class="text-3xl text-left text-blue-400 font-bold">
-    We invite You to enter Our Beautiful Gate
+    Building a JAMStack e-commerce
   </h3>
+
   <h4 class="text-2xl text-left text-blue-700 font-bold">
-    to meet
-    God’s Fragile Butterflies, <br>
-    the Niños of Puerta Hermosa.
+    using a set of powerful tools
   </h4>
 
-  <p class="pt-2 pb-2 px-4">Starts Live on Thursday May 28 at 7PM (PT)</p>
-
-  <ul class="list-disc px-16 text-left">
-    <li>
-      <a href="https://youtu.be/Va5DIomz7wU" target="_blank" class="underline hover:no-underline text-blue-400">Our Children Stories</a>
-    </li>
-    <li>
-      <a href="https://youtu.be/T1PUcKaH1Lo" target="_blank" class="underline hover:no-underline text-blue-400">Rancho Genesis Video</a>
-    </li>
-    <li>
-      <a href="https://youtu.be/Pkjzq7qlU_A" target="_blank" class="underline hover:no-underline text-blue-400">Beautiful Gate - TOUR</a>
-    </li>
-    <li>
-      <a href="https://youtu.be/eYoWpr0llTU" target="_blank" class="underline hover:no-underline text-blue-400">Brad Gustafson - KEYNOTE</a>
-    </li>
+  <ul>
+    <li>Eleventy JS</li>
+    <li>TailWind CSS</li>
+    <li>Foxy.io</li>
   </ul>
 
-  <p class="pt-2 pb-2 px-4">
-    Fourteen years ago when we rescued two very sick little girls, God called upon our hearts ❤ to open Beautiful Gate Orphanage. That dream is now a fully functional orphanage dedicated to abandoned special-needs children, whom we call Fragile Butterflies 🦋.  We deeply love ❤ them and they bless us abundantly.
-  </p>
+  <section>
+    {{lorem.teaser | safe}}
+  </section>
 
-  <p class="pt-2 pb-2 px-4">
-    In partnership with you, we can and are making a difference for them!
-  </p>
 
-  <p class="pt-2 pb-2 px-4">
-    <a href="#donation-text" class="underline hover:no-underline text-blue-400">
-      Help us meet our Matching Grant!
-      <br>
-      <span class="text-blue-700 font-bold">$14,000 already raised of the $30,000 grant</span>
-    </a>
-  </p>
+  <section id="tutorials">
+    <p class="pt-2 pb-2 px-4">
+     You can learn a bit about each of the tools in the videos bellow.
+    </p>
+
+    <ul class="list-disc px-16 text-left">
+    {%- for technology in collections.technology -%}
+      <li>
+        <a href="{{technology.data.tutorial}}" target="_blank" class="underline
+        hover:no-underline text-blue-400">{{technology.data.name}}</a>
+      </li>
+    {%- endfor -%}
+      <li>
+        Logo made by <a href="https://www.designevo.com/logo-maker/" title="Free
+        Online Logo Maker">DesignEvo free logo creator</a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="important-description" class="pt-12 p-8 md:p-12 text-left relative">
+    {{ loremIpsum.full }}
+  </section>
+
 
 </section>
 
-<hr class="m-4 mx-8 border-blue-400" />
-
-<section id="donation-text" class="pt-12 p-8 md:p-12 text-left relative">
-  <h3 class="text-3xl text-left text-blue-400 font-bold">
-    $30,000 matching grant
-  </h3>
-  <h4 class="text-2xl text-left text-blue-700 font-bold">
-    So, every dollar you give will be doubled!
-  </h4>
-
-  <p class="pt-2 pb-2 px-4">You can help us by giving your tax-deductible gift in four ways:</p>
-
-  <ol class="list-decimal px-16 text-left">
-    <li>
-      Go to the <a class="underline hover:no-underline text-blue-400" href="#donation-items">DONATION ITEMS</a> below and select an item.
-      <br>Click on that item to donate online!
-    </li>
-    <li>
-      Or, if you want to donate a certain amount directly to the general fund, please <a href="http://giof.org/support_giof/" target="_blank">click here to support GIOF</a>.
-    </li>
-    <li>
-      You can also avoid the computer and send a check made out to GIOF, and send it to GIOF, PO Box 6458, Chula Vista, CA 91909
-    </li>
-    <li>
-      If possible, please consider making your gift a monthly online pledge.
-    </li>
-  </ol>
-
-
-  <p class="pt-2 pb-2 px-4">
-    Most of the donation items below show two options for payment: a full-price cost, or a monthly pledge, paying 1/12 each month.
-  </p>
-
-  <p class="pt-2 pb-2 px-4">
-    Thank you.
-  </p>
-
-</section>
 
 <hr class="m-4 mx-8 border-blue-400" />
 
