@@ -66,7 +66,12 @@ typings/
 # Build 
 dist
 
+# Vim
+.*.un~
+.*.swp
+
 # Don't commit temp build files
 src/static/app.bundled.js
 src/static/app.compiled.css
 src/_includes/app.compiled.css
+
