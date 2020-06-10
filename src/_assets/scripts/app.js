@@ -54,3 +54,9 @@ qtyInputs.forEach(qty => {
 		});
 	});
 });
+
+// Changes the video 
+function setVideoUrl(url) {
+  document.querySelector('#video-player')
+    .setAttribute('src', url);
+}

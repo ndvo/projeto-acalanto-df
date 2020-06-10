@@ -32,7 +32,9 @@ title: JAMStack e-commerce with Foxy.io
     {%- for technology in collections.technology -%}
       <li>
         <a href="{{technology.data.tutorial}}" target="_blank" class="underline
-        hover:no-underline text-blue-400">{{technology.data.name}}</a>
+        hover:no-underline text-blue-400"
+        onclick="setVideoUrl(this.href)"
+        >{{technology.data.name}}</a>
       </li>
     {%- endfor -%}
       <li>

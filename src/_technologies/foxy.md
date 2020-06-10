@@ -1,6 +1,7 @@
 ---
 tags:
   - technology
+  - foxy
 name: Foxy.io
 type: Shopping Cart Solution
 url: http://foxy.io
