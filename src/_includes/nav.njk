@@ -5,10 +5,9 @@
   </a>
 
   <ul class="text-sm text-gray-700 list-none p-0 flex items-center">
-    <li><a href="https://giof.org/" class="inline-block py-2 px-3 text-gray-900 hover:text-gray-700 no-underline">Home</a></li>
-    <li><a href="http://giof.org/support_giof/" class="inline-block py-2 px-3 text-gray-900 hover:text-gray-700 no-underline">DONATE</a></li>
-    <li><a href="http://giof.org/contact-us/" class="inline-block py-2 px-3 text-gray-900 hover:text-gray-700 no-underline">Contact</a></li>
-    <li class="pr-2"><a href="http://giof.org/support_giof/"
-        class="inline-block py-2 px-3 text-gray-900 hover:text-gray-700 no-underline">Support Us</a></li>
+    {%- for technology in collections.technology -%}
+      {% include "techlink.njk" %}
+    {%- endfor -%}
   </ul>
+
 </nav>
