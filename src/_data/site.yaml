@@ -4,11 +4,11 @@
 
 #  This file can be accessed using: {{ site.title }}
 
-title: "GIOF — Genisis International Orphanage Foundation" # Appears after the title Page eg. Title - Web Starter
-description: "Join Genesis Diez on a mission trip, be part of our summer camp staff, or become a full time missionary."
-url: "https://giof.org/"
+title: "JAM Stack e-commerce template" # Appears after the title Page eg. Title - Web Starter
+description: "An e-commerce website built with 11ty.js, TailwindCSS and Foxy.io"
+url: "https://foxy.io/"
 
-author: "BKF"
+author: "Foxy.io"
 meta_data:
  twitter: "@"
  default_social_image: "/static/default_social_image.jpg"
