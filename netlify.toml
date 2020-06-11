@@ -9,5 +9,10 @@
   # Default build command.
   command = "npm run build"
 [template.environment]
-  FOXYSTORE = "Your Foxy Store"
+  SITENAME = "What's your site's name?"
+  FOXYSTORE = "Your Foxy Store?"
+  SITETITLE = "What's the title of site?"
+  SITEDESCRIPTION = "Write a brief description of your site."
+  ABOUTUS = "Add an about us text"
+  PRODUCTSAPI = "Where are your products stored?"
 
