@@ -89,10 +89,10 @@ repository.
 
 ## Let's deploy it!!
 
-** What? ** That's it! You can now deploy your own version of the site so that
+**What?** That's it! You can now deploy your own version of the site so that
 you can already see it in production.
 
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify/netlify-statuskit"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/ndvo/jamstack-web-starter"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
 
 
 
