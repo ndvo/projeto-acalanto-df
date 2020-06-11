@@ -4,10 +4,12 @@
       <div class="text-gray-700 flex flex-col">
         <div class="inline-block py-2 px-3 text-white uppercase font-medium tracking-wide">Follow Us</div>
         <div class="flex pl-4 justify-start">
-          <a class="block flex items-center text-white hover:text-gray-500 mr-6 no-underline" href="https://www.facebook.com/GenesisDiez/">
-            <i
-              class="fab fa-facebook"></i>
+        {% for key, i in site.social_networks %}
+          <a href="{{ i.url }}"
+          class="block flex items-center text-white hover:text-light mr-6 no-underline" >
+            <i class="{{ i.icon }}"></i>
           </a>
+        {% endfor %}
         </div>
       </div>
     </div>
