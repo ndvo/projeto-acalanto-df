@@ -16,11 +16,12 @@ title: One-page complete e-commerce or live-event site.
     "
     style="background: url(/static/img/field.jpg)"
   >
+	
     {# <div class="relative w-full h-64 p-4" style=""> #}
     <div class="text-center align-middle">
       {# <p>Video goes here :)</p> #}
       <iframe id="video-player" class="absolute w-full h-full" style=""
-      src="{{foxy[0].data.tutorial}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      src="{{ collections.foxy[0].data.tutorial.embed }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     {# </div> #}
   </div>
