@@ -1,3 +1,14 @@
+<!-- TIP: Here we provide the product information to Foxy.io
+  Be very careful building the href of the add to cart button.
+  It is providing the information Foxy.io needs to handle the purchase.
+
+  Check out the documentation:
+  https://docs.foxycart.com/v/2.0/products#using_links
+
+  You can also use a form to provide this info:
+  Check out the documentation:
+  https://docs.foxycart.com/v/2.0/products#using_forms
+-->
 <a 
   href="{{ site.foxy_cart_url }}?name={{ product.name }}&price={{ product.price }}&quantity=1"
   target="giof-cart"
