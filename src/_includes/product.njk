@@ -55,6 +55,11 @@
       </div>
 
       <div class="w-1/3 pr-1">
+        <!-- TIP: Set variables to feed includes
+        Notice that this includes can call other includes.
+        By setting the variable addToCartBtn here we can feed the include with
+        the data it needs
+        -->
         {% set addToCartBtn={ product: product.data, currency: site.currency_symbol, price: product.data.price, color: 'primary', text: 'Once' } %}
         {% if product.data.price < 10000 %}
           {% include "addtocart_button.njk" %}
