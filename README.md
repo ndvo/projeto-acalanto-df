@@ -1,4 +1,4 @@
-# One-Page Ecommerce Static Site (with Customer Portal & Recurring Billing)
+# A JAM Stack e-Commerce with 11ty.js, tailwindcss and Foxy.io
 
 This project demonstrates how to build an One-Page Ecommerce JAMStack
 E-Commerce using a set of amazing tools: 11ty.js, TailwindCSS, Foxy.io and
@@ -94,5 +94,76 @@ you can already see it in production.
 
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/ndvo/jamstack-web-starter"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
 
+**Is that it?** Pretty much. You do need to configure your own Foxy.io account
+and set the name, logo and products of your store, but it is basically done. But
+what's the fun on that? I'm sure you need to create your own features and make
+your store unique.
+
+## Let's hack it!!!
+
+It's time to get our hands dirty to have our e-Commerce ready to sell!
+
+Here's a plan: let's first add our own products. In doing so we will be able to
+understand how we'll the store will fit our needs. Next we'll tweek it's look and
+feel. Finally, we'll add some extra niceties for our store.
+
+### Where do my products go?
+
+You can do this in several ways. We'll explore two of them: creating your
+products as Markdown files and consuming your products from an external API.
+
+#### Customizing collections
+
+You can learn a great deal about Eleventy's collections
+https://www.11ty.dev/docs/collections/.
+
+Here's what you need to get started:
+
+1. Create a "products" collection by creating a `_products` folder in the `src`
+   folder. If you wish to create new collections, simply create folders with
+   different names, starting with `_` as in `_name`.
+1. Customize your collection using the `_products.json` file in the `_products`
+   folder.
+   1. Set a "category" for all products in this folder. This well allow you to create pages that list all products in a category.
+   1. Set the permalink for the items in the category. This will allow you to have a different page for each product.
+
+##### Example: Allow the user to filter by category
+
+Here are the changes we need to make to allow the user to filter our products by
+category with a simple select button.
+
+[...]
+
+#### Customize the look and feel
+
+TailWind will make you life easy here.
+Visit https://tailwindcss.com/ and type what you need in their awesome search
+bar. Grab the provide class, add it to your element and it will be mostly done.
+
+Configuring the TailWind theme will make your life a lot easier when the time
+comes to make changes to your store.
+
+##### Example: styling the discount coupons
+
+[..]
 
 
+#### Adding a new feature: creating discount coupons
+
+Creating a new feature is simply a matter of writing our node and Js code.
+
+JS code in the `_assets/scripts/app.js` file will run on the client.
+
+We'll use javascript data files to allow Eleventy to process our data on compile
+time. This way we can dinamically generate data that will be updated on each
+deploy.
+
+[...]
+
+##### Example: providing some discounts to categories
+
+Foxy.io allows us to easily provide discount coupons valid for a specific period
+of time. Let's create some easter eggs in our store so that costumers who
+provide us with feedback can get a coupon.
+
+[...]
