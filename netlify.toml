@@ -8,3 +8,6 @@
 
   # Default build command.
   command = "npm run build"
+[template.environment]
+  FOXYSTORE = "Your Foxy Store"
+

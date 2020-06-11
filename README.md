@@ -84,32 +84,15 @@ scratch following the tutorial bellow.
 If you want to fork it, go ahead! Every file is documented so that you will know
 what to tweak and how.
 
-Simply click the  fork me button, clone your repository in your development
-machine, navigate to the folder and run npm install and then npm start. You can
-find detailed instructions in the Customize Me directory.
+Simply click the fork me button and you will have your own version of the
+repository.
 
-## Let's build it from scratch!
+## Let's deploy it!!
 
-In this section we will basically walk you through the steps to build the
-website provided in this repository.
+** What? ** That's it! You can now deploy your own version of the site so that
+you can already see it in production.
 
-By walking with us step by step you'll better understand our choices and will be
-comfortable making the changes you feel are suitable for your project.
-
-### Installig git
-### Creating a new repository
-### Installing node
-### Creating a project
-### Installing 11ty.js
-### Creating a simple page
-### Creating data
-### Using data
-### Calling a API on build time
-### Calling an API on runtime
-### Creating your store
-### Keeping your secrets safe
-### Tampering protection
-### Deployment
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify/netlify-statuskit"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
 
 
 
