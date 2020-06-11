@@ -15,3 +15,22 @@ meta_data:
 
 foxy_cart_url: https://giof.foxycart.com/cart
 currency_symbol: $
+
+social_networks:
+  blog:
+    url: "https://www.foxy.io/blog/"
+    icon: "fas fa-blog-square"
+  email:
+    url: "hello@foxy.io"
+    icon: "fas fa-envelope-square"
+    protocol: "mailto"
+  facebook:
+    url: "https://www.facebook.com/foxycart"
+    icon: "fab fa-facebook-square"
+  twitter:
+    url: "https://twitter.com/foxycart"
+    icon: "fab fa-twitter-square"
+  youtube:
+    url: "https://www.youtube.com/foxycart"
+    icon: "fab fa-youtube"
+
