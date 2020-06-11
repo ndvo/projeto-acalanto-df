@@ -7,7 +7,7 @@
   </div>
   {% endif %}
 
-  <div class="p-4">
+  <div class="p-2">
     <input type="hidden" name="name" value="{{ product.data.name }}">
     <input type="hidden" name="price" value="{{ product.data.price }}">
 
@@ -37,33 +37,33 @@
 
     <hr class="my-3">
 
-    <div class="flex flex-wrap leading-7 text-sm">
-      <div class="w-1/3 px-1">
+    <div class="flex flex-wrap leading-7 text-sm space-x-2 justify-between">
+      <div class="w-1/3 pr-1">
         <div class="custom-number-input">
           <div class="flex flex-row w-full rounded-lg relative bg-transparent">
             <button data-action="decrement"
             class=" bg-gray-300 text-dark hover:text-light hover:bg-dark h-full w-20 rounded-l cursor-pointer outline-none">
-              <span class="m-auto text-2xl  font-thin">−</span>
+              <span class="m-auto text-2xl leading-none font-thin">−</span>
             </button>
             <input type="number" min=1 class="outline-none focus:outline-none
             text-center w-full bg-light font-semibold text-xs text-dark hover:text-black focus:text-black  md:text-basecursor-default flex items-center  outline-none" name="quantity" value="1"></input>
             <button data-action="increment"
             class="bg-gray-300 text-dark hover:text-light hover:bg-dark h-full w-20 rounded-r cursor-pointer">
-              <span class="m-auto text-2xl font-thin">+</span>
+              <span class="m-auto text-2xl leading-none font-thin">+</span>
             </button>
           </div>
         </div>
       </div>
 
-      <div class="w-1/3 px-1">
+      <div class="w-1/3 pr-1">
         {% set addToCartBtn={ product: product.data, currency: site.currency_symbol, price: product.data.price, color: 'primary', text: 'Once' } %}
         {% if product.data.price < 10000 %}
           {% include "addtocart_button.njk" %}
         {% endif %}
       </div>
-      <div class="w-1/3 px-1">
+      <div class="w-1/3 px-0">
         {% set addToCartBtn={ product: product.data, currency:
-        site.currency_symbol, price: product.data.price, color: 'secondary',
+        site.currency_symbol, price: product.data.price_monthly, color: 'secondary',
         text: 'Monthly' } %}
         {% include "addtocart_button.njk" %}
       </div>

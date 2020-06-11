@@ -12,12 +12,6 @@ title: JAMStack e-commerce with Foxy.io
     using a set of powerful tools
   </h4>
 
-  <ul>
-    <li>Eleventy JS</li>
-    <li>TailWind CSS</li>
-    <li>Foxy.io</li>
-  </ul>
-
   <section>
     {{lorem.teaser | safe}}
   </section>
@@ -31,10 +25,7 @@ title: JAMStack e-commerce with Foxy.io
     <ul class="list-disc px-16 text-left">
     {%- for technology in collections.technology -%}
       <li>
-      	{{technology.data.tutorial.embed}}
-        <button 
-	class="underline"
-	data-url="{{technology.data.tutorial.embed}}"
+        <button class="underline" data-url="{{technology.data.tutorial.embed}}"
         hover:no-underline text-primary"
         data-action="setVideoUrl"
         >{{technology.data.name}}</button>
@@ -63,10 +54,10 @@ title: JAMStack e-commerce with Foxy.io
 </section>
 <section class="container p-2 pb-4 m-auto flex w-full flex-wrap items-stretch justify-start relative">
 
-  {%- for product in collections.product | sortByPriceHighToLow -%}
+  {% for product in collections.product | sortByPriceHighToLow %}
   <div class="flex flex-col items-center w-full lg:w-1/2 p-2">
     {% include "product.njk" %}
   </div>
-  {%- endfor -%}
+  {% endfor %}
 
 </section>
