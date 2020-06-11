@@ -1,3 +1,9 @@
+// Changes the video 
+function setVideoUrl(el) {
+  document.querySelector('#video-player')
+    .setAttribute('src', el.target.getAttribute('data-url'));
+}
+
 // Quantity selector button
 // From https://tailwindcomponents.com/component/number-input-counter
 // Modifications to set minimum and to dispatch a "change" event by Brett
@@ -31,12 +37,20 @@ const incrementButtons = document.querySelectorAll(
 	`button[data-action="increment"]`
 );
 
+const setVideoButtons = document.querySelectorAll(
+  `button[data-action="setVideoUrl"]`
+);
+
 decrementButtons.forEach((btn) => {
 	btn.addEventListener("click", decrement);
 });
 
 incrementButtons.forEach((btn) => {
 	btn.addEventListener("click", increment);
+});
+ 
+setVideoButtons.forEach((btn) => {
+  btn.addEventListener("click", setVideoUrl)
 });
 
 
@@ -55,8 +69,3 @@ qtyInputs.forEach(qty => {
 	});
 });
 
-// Changes the video 
-function setVideoUrl(url) {
-  document.querySelector('#video-player')
-    .setAttribute('src', url);
-}

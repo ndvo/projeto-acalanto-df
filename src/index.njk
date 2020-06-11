@@ -31,10 +31,13 @@ title: JAMStack e-commerce with Foxy.io
     <ul class="list-disc px-16 text-left">
     {%- for technology in collections.technology -%}
       <li>
-        <a href="{{technology.data.tutorial}}" target="_blank" class="underline
+      	{{technology.data.tutorial.embed}}
+        <button 
+	class="underline"
+	data-url="{{technology.data.tutorial.embed}}"
         hover:no-underline text-blue-400"
-        onclick="setVideoUrl(this.href)"
-        >{{technology.data.name}}</a>
+        data-action="setVideoUrl"
+        >{{technology.data.name}}</button>
       </li>
     {%- endfor -%}
       <li>
