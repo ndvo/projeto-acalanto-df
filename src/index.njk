@@ -23,6 +23,15 @@ title: JAMStack e-commerce with Foxy.io
     </p>
 
     <ul class="list-disc px-16 text-left">
+
+    <!-- TIP: Iterate over a collection
+    This collection can be created simply by creating a folder with a name
+    starting with "_" within the src folder.
+    Inside this folder create your items as markdown files.
+
+    Learn more at: https://www.11ty.dev/docs/collections/
+    -->
+
     {%- for technology in collections.technology -%}
       <li>
         <button class="underline hover:no-underline text-primary"
