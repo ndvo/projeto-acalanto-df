@@ -1,4 +1,8 @@
 module.exports = {
+  /* TIP: Customize TailWind classes
+   * By setting theme variables in tailwind.config we can use custom TailWind
+   * classes
+   */
   theme: {
     extend: {
       colors: {
