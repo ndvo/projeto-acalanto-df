@@ -56,24 +56,16 @@
       </div>
 
       <div class="w-1/3 px-1">
+        {% set addToCartBtn={ product: product.data, currency: site.currency_symbol, price: product.data.price, color: 'primary', text: 'Once' } %}
         {% if product.data.price < 10000 %}
-        <a href="{{ site.foxy_cart_url }}?name={{ product.data.name }}&price={{ product.data.price }}&quantity=1"
-          target="giof-cart" data-foxy-product-link
-          class="block no-underline text-center w-full shadow bg-indigo-400 hover:bg-indigo-500 focus:shadow-outline focus:outline-none text-white text-xs px-1 rounded mb-2"
-        >
-          <strong>Once</strong>
-          ({{ site.currency_symbol }}{{ product.data.price }})
-        </a>
+          {% include "addtocart_button.njk" %}
         {% endif %}
       </div>
       <div class="w-1/3 px-1">
-        <a href="{{ site.foxy_cart_url }}?name={{ product.data.name }}&price={{ product.data.price_monthly }}&quantity=1&sub_frequency=1m"
-          target="giof-cart" data-foxy-product-link
-          class="block no-underline text-center w-full shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs px-1 rounded mb-2"
-        >
-          <strong>Monthly</strong>
-          ({{ site.currency_symbol }}{{ product.data.price_monthly }})
-        </a>
+        {% set addToCartBtn={ product: product.data, currency:
+        site.currency_symbol, price: product.data.price, color: 'secondary',
+        text: 'Monthly' } %}
+        {% include "addtocart_button.njk" %}
       </div>
     </div>
   </div>
