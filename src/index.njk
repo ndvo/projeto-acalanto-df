@@ -65,6 +65,9 @@ title: JAMStack e-commerce with Foxy.io
 
   {% for product in collections.product | sortByPriceHighToLow %}
   <div class="flex flex-col items-center w-full lg:w-1/2 p-2">
+    <!-- TIP: Use includes to avoid repetition
+    11ty recognizes template files in the _includes folder.
+    -->
     {% include "product.njk" %}
   </div>
   {% endfor %}
