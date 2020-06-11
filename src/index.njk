@@ -25,9 +25,9 @@ title: JAMStack e-commerce with Foxy.io
     <ul class="list-disc px-16 text-left">
     {%- for technology in collections.technology -%}
       <li>
-        <button class="underline" data-url="{{technology.data.tutorial.embed}}"
-        hover:no-underline text-primary"
-        data-action="setVideoUrl"
+        <button class="underline hover:no-underline text-primary"
+        data-action="setVideoUrl" 
+        data-url="{{technology.data.tutorial.embed}}"
         >{{technology.data.name}}</button>
       </li>
     {%- endfor -%}
