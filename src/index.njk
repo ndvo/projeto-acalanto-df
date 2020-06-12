@@ -4,55 +4,61 @@ title: JAMStack e-commerce with Foxy.io
 ---
 
 <section class="pt-12 p-8 md:p-12 text-left">
-  <h3 class="text-3xl text-left text-primary font-bold">
-    Building a JAMStack e-commerce
-  </h3>
+  <section id="presentation">
+    <h3 class="text-3xl text-left text-primary font-bold">
+      Building a JAMStack e-commerce
+    </h3>
 
-  <h4 class="text-2xl text-left text-primary font-bold">
-    using a set of powerful tools
-  </h4>
+    <h4 class="text-2xl text-left text-primary font-bold">
+      using a set of powerful tools
+    </h4>
 
-  <section>
-    {{lorem.teaser | safe}}
+    <div>
+      {{lorem.teaser | safe}}
+    </div>
   </section>
-
-
-  <section id="tutorials">
-    <p class="pt-2 pb-2 px-4">
-     You can learn a bit about each of the tools in the videos bellow.
-    </p>
-
-    <ul class="list-disc px-16 text-left">
-
-    <!-- TIP: Iterate over a collection
-    This collection can be created simply by creating a folder with a name
-    starting with "_" within the src folder.
-    Inside this folder create your items as markdown files.
-
-    Learn more at: https://www.11ty.dev/docs/collections/
-    -->
-
-    {%- for technology in collections.technology -%}
-      <li>
-        <button class="underline hover:no-underline text-primary"
-        data-action="setVideoUrl" 
-        data-url="{{technology.data.tutorial.embed}}"
-        >{{technology.data.name}}</button>
-      </li>
-    {%- endfor -%}
-      <li>
-        Logo made by <a href="https://www.designevo.com/logo-maker/" title="Free
-        Online Logo Maker">DesignEvo free logo creator</a>
-      </li>
-    </ul>
-  </section>
-
-  <section id="important-description" class="pt-12 p-8 md:p-12 text-left relative">
-    {{ lorem.longTeaser | safe }}
-  </section>
-
 </section>
 
+
+<section id="tutorials" class="pt-12 p-8 md:p-12 text-left">
+  <p class="pt-2 pb-2 px-4">
+   You can learn a bit about each of the tools in the videos bellow.
+  </p>
+
+  <ul class="list-disc px-16 text-left">
+
+  <!-- TIP: Iterate over a collection
+  This collection can be created simply by creating a folder with a name
+  starting with "_" within the src folder.
+  Inside this folder create your items as markdown files.
+
+  Learn more at: https://www.11ty.dev/docs/collections/
+  -->
+
+  {%- for technology in collections.technology -%}
+    <li>
+      <button class="underline hover:no-underline text-primary"
+      data-action="setVideoUrl" 
+      data-url="{{technology.data.tutorial.embed}}"
+      >{{technology.data.name}}</button>
+    </li>
+  {%- endfor -%}
+    <li>
+      Logo made by <a href="https://www.designevo.com/logo-maker/" title="Free
+      Online Logo Maker">DesignEvo free logo creator</a>
+    </li>
+  </ul>
+</section>
+
+<hr class="m-4 mx-8 border-primary" />
+
+<section id="important-description" class="pt-12 p-8 md:p-12 text-left relative">
+  <h3 class="text-3xl text-left text-primary font-bold">
+  Important description
+  </h3>
+  {% include 'backToTop.njk' %}
+  {{ lorem.longTeaser | safe }}
+</section>
 
 <hr class="m-4 mx-8 border-primary" />
 
@@ -60,6 +66,7 @@ title: JAMStack e-commerce with Foxy.io
   <h3 class="w-full text-3xl text-left text-primary font-bold">
     Check out our amazing products
   </h3>
+  {% include 'backToTop.njk' %}
 </section>
 <section class="container p-2 pb-4 m-auto flex w-full flex-wrap items-stretch justify-start relative">
 
