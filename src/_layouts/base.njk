@@ -18,6 +18,7 @@
     {{ content | safe }}
     {# {% include "footer_bottom.njk" %} #}
     <script src="/static/app.bundled.js"></script>
-    {# <script src="https://cdn.foxycart.com/giof/loader.js"></script> #}
+    <script data-cfasync="false" src="https://cdn.foxycart.com/{{ store.subdomain }}/loader.js" async defer></script>
+ 
   </body>
 </html>

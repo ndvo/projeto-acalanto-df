@@ -13,7 +13,6 @@ meta_data:
  twitter: "@"
  default_social_image: "/static/default_social_image.jpg"
 
-foxy_cart_url: https://giof.foxycart.com/cart
 currency_symbol: $
 
 social_networks:
