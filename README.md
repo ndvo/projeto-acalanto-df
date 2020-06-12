@@ -2,17 +2,21 @@
 
 This project demonstrates how to build an One-Page Ecommerce JAMStack
 E-Commerce using a set of amazing tools: 11ty.js, TailwindCSS, Foxy.io and
-Netlify.
+Netlify.  These tools allow you to quickly and unexpensively create your e-commerce.
 
-These tools allow you to quickly and unexpensively create your e-commerce.
+**Are you in a rush? Go for it!** <a href="https://app.netlify.com/start/deploy?repository=https://github.com/ndvo/jamstack-web-starter"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
 
-You can use this project to learn and understand how it was built, or you can
-fork it and customize it to fit your needs.
+How to use this project?
 
-Every file is commented to help you understand what it does, why we chose it to
-be this way and how you can customize it. Also, each folder has it's own README
-file so that you can better understand how it works when navigating the GitHub
-repository.
+- Fork it or Deploy it on Netlify
+- Customize it by adding your brand and products
+
+This project's goal is to help you get up and running with your e-commerce.
+We're adding relevant comments to the code so that you understand clearly where
+and how you can change it to achieve what you need.  Every file is commented to
+help you understand what it does, why we chose it to be this way and how you can
+customize it. Also, each folder has it's own README file so that you can better
+understand how it works when navigating the GitHub repository.
 
 
 ## Acknowledgements
