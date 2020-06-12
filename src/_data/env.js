@@ -1,1 +1,4 @@
-module.exports = process.env.ELEVENTY_ENV;
+module.exports = {
+  env: process.env.ELEVENTY_ENV,
+  foxystore: process.env.FOXYSTORE
+}
