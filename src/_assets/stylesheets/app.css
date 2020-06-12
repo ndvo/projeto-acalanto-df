@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
 	@apply text-ws-blue-500 underline;
 }
