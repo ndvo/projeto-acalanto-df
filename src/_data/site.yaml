@@ -2,17 +2,21 @@
 #  All *.json and module.exports values from *.js files in this directory will
 #  be added into a global data object available to all templates.
 
-#  This file can be accessed using: {{ site.title }}
+#  TIP: Variables from this file can be accessed from template files with: {{ site.variable }}. For example: {{ site.title }} or {{ site.description }}
 
 title: "JAM Stack e-commerce template" # Appears after the title Page eg. Title - Web Starter
+slogan: "using a set of powerfull tools"
 description: "An e-commerce website built with 11ty.js, TailwindCSS and Foxy.io"
-url: "https://foxy.io/"
-
-author: "Foxy.io"
 meta_data:
  twitter: "@"
  default_social_image: "/static/default_social_image.jpg"
 
+texts:
+  presentation: "Go on! Tweak this site to meet your needs! You'll discover you'll have the perfect site in no time."
+  highlight: "Here are some of our highlights"
+  message: "Here is a message for you."
+  products: "Our amazing products!"
+  
 
 # Careful! Use quotes around your links.
 navigation:
@@ -46,4 +50,8 @@ social_networks:
   youtube:
     url: "https://www.youtube.com/foxycart"
     icon: "fab fa-youtube"
+
+
+url: "https://foxy.io/"
+author: "Foxy.io"
 

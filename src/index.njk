@@ -3,44 +3,42 @@ layout: onepage.njk
 title: JAMStack e-commerce with Foxy.io
 ---
 
-<section class="pt-12 p-8 md:p-12 text-left">
-  <section id="presentation">
-    <h3 class="text-3xl text-left text-primary font-bold">
-      Building a JAMStack e-commerce
-    </h3>
 
-    <h4 class="text-2xl text-left text-primary font-bold">
-      using a set of powerful tools
-    </h4>
-
-    <div>
-      {{lorem.teaser | safe}}
-    </div>
-  </section>
+<section id="presentation" class="pt-12 p-8 md:p-12 text-left">
+  <h1 class="text-3xl text-left text-primary-dark font-bold">
+    {{ site.title }}
+  </h1>
+  <h4 class="text-2xl text-left text-primary font-bold">
+    {{ site.slogan }}
+  </h4>
+  {% if site.texts.presentation %}
+  <div>
+    {{ site.texts.presentation }}
+  </div>
+  {% endif %}
 </section>
 
+<section id="highlight" class="pt-12 p-8 md:p-12 text-left">
 
-<section id="tutorials" class="pt-12 p-8 md:p-12 text-left">
-  <p class="pt-2 pb-2 px-4">
-   You can learn a bit about each of the tools in the videos bellow.
-  </p>
+  <h3 class="text-2xl text-left text-primary font-bold">
+  {{ site.texts.highlight }}
+  </h3>
 
   <ul class="list-disc px-16 text-left">
 
-  <!-- TIP: Iterate over a collection
+  {# TIP: Iterate over a collection
   This collection can be created simply by creating a folder with a name
   starting with "_" within the src folder.
   Inside this folder create your items as markdown files.
 
   Learn more at: https://www.11ty.dev/docs/collections/
-  -->
-
-  {%- for technology in collections.technology -%}
+  #}
+  {%- for highlight in collections.highlight -%}
     <li>
       <button class="underline hover:no-underline text-primary"
       data-action="setVideoUrl" 
-      data-url="{{technology.data.tutorial.embed}}"
-      >{{technology.data.name}}</button>
+      data-url="{{highlight.data.video.embed}}"
+      >{{highlight.data.name}}</button>
     </li>
   {%- endfor -%}
     <li>
@@ -50,31 +48,41 @@ title: JAMStack e-commerce with Foxy.io
   </ul>
 </section>
 
+{% if site.texts.message %}
 <hr class="m-4 mx-8 border-primary" />
 
-<section id="important-description" class="pt-12 p-8 md:p-12 text-left relative">
-  <h3 class="text-3xl text-left text-primary font-bold">
-  Important description
+<section id="message" class="pt-12 p-8 md:p-12 text-left relative">
+  <h3 class="text-2xl text-left text-primary font-bold">
+  {{ site.texts.message }}
   </h3>
+
   {% include 'backToTop.njk' %}
+  {# TIP: this content is fetched during compilation.
+  Check out the _data/lorem.js file and fetch your own data
+  during compilation.
+  #}
+
+  <p class="pt-2 pb-2 px-4">
   {{ lorem.longTeaser | safe }}
+  </p>
 </section>
+{% endif %}
 
 <hr class="m-4 mx-8 border-primary" />
 
 <section id="product-list" class="pt-12 p-8 md:p-12 pb-0 md:pb-0 text-left relative">
   <h3 class="w-full text-3xl text-left text-primary font-bold">
-    Check out our amazing products
+    {{ site.texts.products }}
   </h3>
   {% include 'backToTop.njk' %}
 </section>
-<section class="container p-2 pb-4 m-auto flex w-full flex-wrap items-stretch justify-start relative">
 
+<section class="container p-2 pb-4 m-auto flex w-full flex-wrap items-stretch justify-start relative">
   {% for product in collections.product | sortByPriceHighToLow %}
   <div class="flex flex-col items-center w-full lg:w-1/2 p-2">
-    <!-- TIP: Use includes to avoid repetition
+    {# TIP: Use includes to avoid repetition
     11ty recognizes template files in the _includes folder.
-    -->
+    #}
     {% include "product.njk" %}
   </div>
   {% endfor %}
