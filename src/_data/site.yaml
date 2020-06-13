@@ -13,6 +13,20 @@ meta_data:
  twitter: "@"
  default_social_image: "/static/default_social_image.jpg"
 
+
+# Careful! Use quotes around your links.
+navigation:
+  - name: Presentation
+    url: '#presentation'
+    description: This is our awesome store
+  - name: Tools used
+    url: '#highlight'
+    description: Learn about the tools we used
+  - name: Our products
+    url: '#product-list'
+    description: Check out the cool products we have
+
+
 currency_symbol: $
 
 social_networks:

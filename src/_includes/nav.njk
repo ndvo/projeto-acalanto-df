@@ -4,27 +4,7 @@
   </a>
 
   <ul class="text-sm text-gray-700 list-none p-0 flex items-center">
-    {#
-      Set the links array to build your menu.
-    #}
-    {% set links = [
-      {
-        name: 'Presentation',
-        url: '#presentation',
-        description: 'This is our awesome store'
-      },
-      {
-        name: 'Tools used',
-        url: '#tutorials',
-        description: 'Learn about the tools we used'
-      },
-      {
-        name: 'Our products',
-        url: '#product-list',
-        description: 'Check out the cool products we have'
-      }
-    ] %}
-    {%- for item in links -%}
+    {%- for item in site.navigation -%}
       {% include "listLink.njk" %}
     {%- endfor -%}
   </ul>
