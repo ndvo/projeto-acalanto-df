@@ -4,8 +4,8 @@
 
 #  TIP: Variables from this file can be accessed from template files with: {{ site.variable }}. For example: {{ site.title }} or {{ site.description }}
 
-title: "JAM Stack e-commerce template" # Appears after the title Page eg. Title - Web Starter
-slogan: "using a set of powerfull tools"
+title: "Projeto Acalanto DF" # Appears after the title Page eg. Title - Web Starter
+slogan: "Sua ajuda pode salvar vidas"
 description: "An e-commerce website built with 11ty.js, TailwindCSS and Foxy.io"
 meta_data:
  twitter: "@"
@@ -13,45 +13,42 @@ meta_data:
 
 texts:
   presentation: "Go on! Tweak this site to meet your needs! You'll discover you'll have the perfect site in no time."
-  highlight: "Here are some of our highlights"
-  message: "Here is a message for you."
+  highlight: "Vídeos sobre o projeto"
+  message: "Conheça mais sobre nós"
   products: "Our amazing products!"
   
 
 # Careful! Use quotes around your links.
 navigation:
-  - name: Presentation
-    url: '#presentation'
-    description: This is our awesome store
-  - name: Tools used
+  - name: Sobre nós
     url: '#highlight'
     description: Learn about the tools we used
-  - name: Our products
+  - name: Conheça nossos amigos
     url: '#product-list'
-    description: Check out the cool products we have
+    description: Ajude nossos animais
 
 
 currency_symbol: $
 
 social_networks:
   blog:
-    url: "https://www.foxy.io/blog/"
+    url: "https://linktr.ee/projetoacalantodf"
     icon: "fas fa-blog-square"
   email:
-    url: "hello@foxy.io"
+    url: "projetoacalantodf@gmail.com"
     icon: "fas fa-envelope-square"
     protocol: "mailto"
   facebook:
-    url: "https://www.facebook.com/foxycart"
+    url: "https://www.facebook.com/projetoacalantodf"
     icon: "fab fa-facebook-square"
-  twitter:
-    url: "https://twitter.com/foxycart"
-    icon: "fab fa-twitter-square"
+  instagram:
+    url: "https://www.instagram.com/projetoacalantodf/"
+    icon: "fab  fa-instagram-square"
   youtube:
-    url: "https://www.youtube.com/foxycart"
+    url: "https://www.youtube.com/channel/UCPkQVP3gP_sYR8qhaCOD-PA"
     icon: "fab fa-youtube"
 
 
-url: "https://foxy.io/"
-author: "Foxy.io"
+url: "https://www.instagram.com/projetoacalantodf"
+author: "Projeto Acalanto DF"
 
