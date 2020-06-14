@@ -34,7 +34,7 @@ currency_symbol: R$
 social_networks:
   blog:
     url: "https://linktr.ee/projetoacalantodf"
-    icon: "fas fa-blog-square"
+    icon: "fas fa-blog"
   email:
     url: "projetoacalantodf@gmail.com"
     icon: "fas fa-envelope-square"
@@ -44,7 +44,7 @@ social_networks:
     icon: "fab fa-facebook-square"
   instagram:
     url: "https://www.instagram.com/projetoacalantodf/"
-    icon: "fab  fa-instagram-square"
+    icon: "fab fa-instagram"
   youtube:
     url: "https://www.youtube.com/channel/UCPkQVP3gP_sYR8qhaCOD-PA"
     icon: "fab fa-youtube"
