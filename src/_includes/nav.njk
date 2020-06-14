@@ -1,9 +1,15 @@
-<nav id="menu" class="font-sans bg-white text-center flex justify-between my-4 mx-auto container overflow-hidden">
-  <a href="/" class="block text-left md:ml-4">
-    <img src="/static/img/mylogo.png"  id="logo" alt="Logo: A hand drawn store and the slogan: let's get started." >
+<nav id="menu" class="z-50 font-sans bg-white text-center flex
+justify-between p-4 mx-auto container overflow-hidden
+shadow-lg
+sticky top-0 ">
+  <a href="/" >
+    <img src="/static/img/mylogo.png"  class="rounded-lg
+    h-20" id="logo" 
+    alt="Logo: A hand drawn store and the slogan: let's get started." >
   </a>
 
-  <ul class="text-sm text-gray-700 list-none p-0 flex items-center">
+  <ul class="text-sm text-gray-700 list-none p-0 flex
+  items-center">
     {%- for item in site.navigation -%}
       {% include "listLink.njk" %}
     {%- endfor -%}
