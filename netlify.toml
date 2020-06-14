@@ -10,5 +10,5 @@
   command = "npm run build"
 [template.environment]
   FOXYSTORENAME:"What's your store name? (Default: My Store)",
-  FOXYSTORELOGO:"What's your logo URL? (Default: static/img/mylogo.png)"
+  FOXYSTORELOGO:"What's your logo URL? (Default: static/img/mylogo.png)",
   FOXYSTORESUBDOMAIN = "What's your foxystore subdomain?"
