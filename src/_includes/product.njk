@@ -61,7 +61,9 @@
         By setting the variable addToCartBtn here we can feed the include with
         the data it needs
         -->
-        {% set addToCartBtn={ product: product.data, currency: site.currency_symbol, price: product.data.price, color: 'primary', text: 'Once' } %}
+        {% set addToCartBtn={ product: product.data,
+        currency: site.currency_symbol, price:
+        product.data.price, color: 'primary', text: 'Doar' } %}
         {% if product.data.price < 10000 %}
           {% include "addtocart_button.njk" %}
         {% endif %}
@@ -71,8 +73,8 @@
           product: product.data,
           currency: site.currency_symbol,
           price: product.data.price_monthly,
-          color: 'primary-dark',
-          text: 'Monthly' 
+          color: 'primary-darker',
+          text: 'Apadrinhar' 
           }
         %}
         {% include "addtocart_button.njk" %}
