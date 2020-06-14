@@ -9,10 +9,6 @@
   # Default build command.
   command = "npm run build"
 [template.environment]
-  SITENAME = "What's your site's name?"
-  FOXYSTORE = "Your Foxy Store?"
-  SITETITLE = "What's the title of site?"
-  SITEDESCRIPTION = "Write a brief description of your site."
-  ABOUTUS = "Add an about us text"
-  PRODUCTSAPI = "Where are your products stored?"
-
+  FOXYSTORENAME:"What's your store name? (Default: My Store)",
+  FOXYSTORELOGO:"What's your logo URL? (Default: static/img/mylogo.png)"
+  FOXYSTORESUBDOMAIN = "What's your foxystore subdomain?"
