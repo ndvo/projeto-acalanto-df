@@ -15,8 +15,11 @@
     }}?name={{
     addToCartBtn.product.name 
     }}&price={{
-      addToCartBtn.product.price
-    }}&quantity=1"
+      addToCartBtn.price
+    }}&quantity=1{% if addToCartBtn.monthly %}
+    &sub_frequency=1m
+    {% endif %}
+    "
   target="{{ store.subdomain }}-cart"
   data-foxy-product-link
   class="block no-underline text-center w-full shadow bg-{{

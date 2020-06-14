@@ -1,11 +1,11 @@
 <div data-foxy-product-container
   class="rounded-md overflow-hidden shadow-lg border-light border-2 h-full w-full">
-  {% if product.data.image %}
+
   <div>
-    <img class="h-64 object-cover w-full" src="{{ product.data.image }}" alt="{{ product.data.image_alt_text if product.data.image_alt_text else product.data.name }}">
-    {# {% myResponsiveImage product.data.image, "alt" %} #}
+    <img class="h-64 object-cover w-full"
+    src="/static/img/{{ product.data.name | slug }}.jpg"
+    alt="{{ product.data.image_alt_text if product.data.image_alt_text else product.data.name }}">
   </div>
-  {% endif %}
 
   <div class="p-2">
     <input type="hidden" name="name" value="{{ product.data.name }}">
@@ -19,11 +19,13 @@
         {% if product.data.price < 10000 %}
         <p>
           {{ site.currency_symbol }}{{ product.data.price }}<br>
-          ({{ site.currency_symbol }}{{ product.data.price_monthly }}/mo)
+          ({{ site.currency_symbol }}{{
+            product.data.price_monthly }}/mês)
         </p>
         {% else %}
         <p>
-          {{ site.currency_symbol }}{{ product.data.price_monthly }}/mo
+          {{ site.currency_symbol }}{{
+            product.data.price_monthly }}/mês
         </p>
         {% endif %}
       </div>
@@ -56,11 +58,6 @@
       </div>
 
       <div class="w-1/3 pr-1">
-        <!-- TIP: Set variables to feed includes
-        Notice that this includes can call other includes.
-        By setting the variable addToCartBtn here we can feed the include with
-        the data it needs
-        -->
         {% set addToCartBtn={ product: product.data,
         currency: site.currency_symbol, price:
         product.data.price, color: 'primary', text: 'Doar' } %}
@@ -73,8 +70,9 @@
           product: product.data,
           currency: site.currency_symbol,
           price: product.data.price_monthly,
-          color: 'primary-darker',
-          text: 'Apadrinhar' 
+          color: 'primary-dark',
+          text: 'Apadrinhar',
+          monthly: true
           }
         %}
         {% include "addtocart_button.njk" %}
