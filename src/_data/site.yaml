@@ -6,16 +6,16 @@
 
 title: "Projeto Acalanto DF" # Appears after the title Page eg. Title - Web Starter
 slogan: "Sua ajuda pode salvar vidas"
-description: "An e-commerce website built with 11ty.js, TailwindCSS and Foxy.io"
+description: "Adotar é o bicho!"
 meta_data:
  twitter: "@"
  default_social_image: "/static/default_social_image.jpg"
 
 texts:
-  presentation: "Go on! Tweak this site to meet your needs! You'll discover you'll have the perfect site in no time."
+  presentation: "Somos um grupo de protetores independentes que cuidam, zelam e promovem a adoção de centenas de animais! 🐱 🧡🐶"
   highlight: "Vídeos sobre o projeto"
   message: "Conheça mais sobre nós"
-  products: "Our amazing products!"
+  products: "Nossos amigos!"
   
 
 # Careful! Use quotes around your links.
