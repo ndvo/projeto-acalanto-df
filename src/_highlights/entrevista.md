@@ -2,7 +2,7 @@
 tags:
   - highlight
 
-name: 'Quem somos?'
+name: Quem somos?
 type: 'Static Site Generator'
 url: 'https://www.youtube.com/watch?v=IuMesQEX5NI'
 description: "Conheça um pouco de nosso trabalho nessa
