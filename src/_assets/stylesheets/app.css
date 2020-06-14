@@ -5,9 +5,6 @@ html {
   scroll-behavior: smooth;
 }
 
-a {
-	@apply text-ws-blue-500 underline;
-}
 
 /* From https://tailwindcomponents.com/component/number-input-counter */
 input[type="number"]::-webkit-inner-spin-button,
