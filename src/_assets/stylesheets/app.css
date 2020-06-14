@@ -1,8 +1,16 @@
+
 @tailwind base;
 @tailwind components;
 
+@font-face {
+  font-family: Nunito;
+  font-weight: 400;
+  src: url(/static/fonts/Nunito-Regular.ttf);
+}
+
 html {
   scroll-behavior: smooth;
+  font-family: Nunito;
 }
 
 
@@ -21,6 +29,5 @@ img#logo {
 .custom-number-input button:focus {
 	outline: none !important;
 }
-
 
 @tailwind utilities;
