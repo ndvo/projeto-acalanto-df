@@ -18,6 +18,8 @@ title: JAMStack e-commerce with Foxy.io
   {% endif %}
 </section>
 
+<hr class="m-4 mx-8 border-primary" />
+
 <section id="highlight" class="pt-12 p-8 md:p-12 text-left">
 
   <h3 class="text-2xl text-left text-primary font-bold">
@@ -33,7 +35,7 @@ title: JAMStack e-commerce with Foxy.io
 
   Learn more at: https://www.11ty.dev/docs/collections/
   #}
-  {%- for highlight in collections.highlight -%}
+  {%- for highlight in collections.highlight | sort -%}
     <li>
       <button class="underline hover:no-underline text-primary"
       data-action="setVideoUrl" 
